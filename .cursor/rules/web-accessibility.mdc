@@ -1,0 +1,48 @@
+---
+description: WCAG-aligned accessibility requirements for all new and changed code
+alwaysApply: true
+---
+
+# Web accessibility
+
+All code added or changed in this repo must support **WCAG 2.2 Level AA** where applicable (W3C [Understanding WCAG 2.2](https://www.w3.org/WAI/WCAG22/Understanding/)).
+
+## Markup and semantics
+
+- Use semantic HTML first: landmarks (`header`, `nav`, `main`, `footer`), headings in order (`h1` → `h2` → `h3`), lists for lists, `button` vs `a href`.
+- Provide a **skip link** to `#main-content` when the page has repeated navigation.
+- Give every page a unique, accurate `<title>`; keep `lang` on `<html>` correct.
+- Do not use `aria-hidden="true"` on content that is the only source of important information; offer an equivalent for assistive tech (e.g. visually hidden list) if visuals are decorative or duplicated.
+
+## Keyboard and focus
+
+- Everything interactive must be reachable and operable with keyboard only; no keyboard traps.
+- **Visible focus** for `:focus-visible` (never remove focus outlines without a stronger replacement).
+- `tabindex` only when necessary; avoid positive values.
+
+## Images and media
+
+- Meaningful images: descriptive `alt`. Decorative: `alt=""` and hide from AT if needed.
+- Video/audio: captions / transcripts when adding media (future).
+
+## Color, contrast, and motion
+
+- Text contrast at least **4.5:1** for normal text, **3:1** for large text; UI components and graphics that convey information need **3:1** against adjacent colors.
+- Do not rely on color alone for meaning (e.g. underline links or add text/icons).
+- Respect **`prefers-reduced-motion`**: reduce or disable non-essential animation.
+- Test **forced-colors** / high contrast: critical text (e.g. gradient text tricks) must remain readable.
+
+## Links and new windows
+
+- Link purpose clear from text or context; use `aria-label` when visible text is insufficient.
+- **`target="_blank"`**: always pair with `rel="noopener noreferrer"` and tell users a new tab/window opens (`aria-label` or visually hidden text), e.g. “(opens in new tab)”.
+
+## Forms (when added)
+
+- Visible labels (or `aria-label` / `aria-labelledby`); associate errors with fields; don’t rely on placeholder alone.
+
+## Dynamic content (when added)
+
+- Announce important updates with live regions or focus management as appropriate.
+
+Prefer manual checks (keyboard, screen reader, zoom to 200%) for this static site; automated tools are supplementary.

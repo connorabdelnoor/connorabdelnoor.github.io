@@ -1,0 +1,183 @@
+/* ── Header (mobile) ── */
+
+.site-header {
+  position: relative;
+}
+
+.site-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+}
+
+/* ── Branding ── */
+
+.site-title {
+  font-size: 1.375rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.site-title:hover {
+  color: var(--text);
+}
+
+.site-description {
+  margin-top: 0.375rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+/* ── Menu toggle ── */
+
+.site-nav-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  color: var(--text);
+  cursor: pointer;
+}
+
+/* Bars are borders, not backgrounds, so they stay visible in forced-colors mode. */
+.site-nav-toggle-icon,
+.site-nav-toggle-icon::before,
+.site-nav-toggle-icon::after {
+  display: block;
+  width: 1.375rem;
+  border-top: 2px solid currentColor;
+  transition: transform 0.2s ease;
+}
+
+.site-nav-toggle-icon {
+  position: relative;
+}
+
+.site-nav-toggle-icon::before,
+.site-nav-toggle-icon::after {
+  content: '';
+  position: absolute;
+  left: 0;
+}
+
+.site-nav-toggle-icon::before {
+  top: -9px;
+}
+
+.site-nav-toggle-icon::after {
+  top: 5px;
+}
+
+.site-nav-toggle[aria-expanded='true'] .site-nav-toggle-icon {
+  border-top-color: transparent;
+}
+
+.site-nav-toggle[aria-expanded='true'] .site-nav-toggle-icon::before {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.site-nav-toggle[aria-expanded='true'] .site-nav-toggle-icon::after {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ── Nav ── */
+
+.site-nav-list {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  padding: 0.5rem 1.5rem 1rem;
+  list-style: none;
+  background-color: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+
+.site-nav-toggle[aria-expanded='true'] + .site-nav-list {
+  display: block;
+}
+
+.site-nav-link {
+  display: block;
+  padding: 0.75rem 0;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.site-nav-link:hover,
+.site-nav-link[aria-current='page'] {
+  color: var(--text);
+}
+
+/* An underline marks the current page so it isn't shown by color alone (WCAG 1.4.1). */
+.site-nav-link[aria-current='page'] {
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.35em;
+}
+
+.site-title:focus-visible,
+.site-nav-toggle:focus-visible,
+.site-nav-link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-nav-toggle-icon,
+  .site-nav-toggle-icon::before,
+  .site-nav-toggle-icon::after {
+    transition: none;
+  }
+}
+
+/* ── Sidebar (desktop) ── */
+
+@media (min-width: 1024px) {
+  .site-header {
+    background-color: var(--tint);
+  }
+
+  .site-header-inner {
+    display: block;
+    position: sticky;
+    top: 0;
+    padding: 4rem 2.5rem 0;
+  }
+
+  .site-branding {
+    margin-bottom: 2rem;
+  }
+
+  .site-nav-toggle {
+    display: none;
+  }
+
+  .site-nav-list,
+  .site-nav-toggle[aria-expanded='true'] + .site-nav-list {
+    display: flex;
+    position: static;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+    padding: 0;
+    background-color: transparent;
+    border-bottom: 0;
+  }
+
+  .site-nav-link {
+    padding: 0.25rem 0;
+  }
+}

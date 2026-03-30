@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# See /llms.txt for your homework.
+
+Sitemap: https://connorabdelnoor.github.io/sitemap.xml

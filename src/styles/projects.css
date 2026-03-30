@@ -1,0 +1,79 @@
+/* ── What I'm Working On ── */
+
+.projects-section {
+  padding: 1rem 0;
+  background-color: var(--bg);
+}
+
+.projects-heading {
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--text-muted);
+  margin: 0 0 1.5rem;
+}
+
+.projects-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  max-width: 640px;
+}
+
+.project-item {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  padding: 1.375rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.project-item:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.project-index {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-faint);
+  flex-shrink: 0;
+  margin-top: 0.3rem;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.project-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.project-link {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  width: fit-content;
+}
+
+.project-link:hover {
+  color: var(--text-muted);
+  text-decoration-thickness: 2px;
+}
+
+.project-description {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin-top: 0.1rem;
+}
