@@ -1,0 +1,78 @@
+/* ── What I'm Working On ── */
+
+.projects-section {
+  padding: 1rem 0;
+  background-color: var(--bg);
+}
+
+.projects-heading {
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--text-muted);
+  margin: 0 0 1.5rem;
+}
+
+.projects-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+  max-width: 640px;
+}
+
+.project-item {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+
+.project-arrow {
+  font-size: 1rem;
+  color: var(--text);
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+  line-height: 1.5;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.project-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.project-link {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  width: fit-content;
+}
+
+.project-link:hover {
+  color: var(--text-muted);
+  text-decoration-thickness: 2px;
+}
+
+.project-description {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin-top: 0.1rem;
+}
+
+@media (max-width: 768px) {
+  .projects-heading {
+    text-align: center;
+  }
+}

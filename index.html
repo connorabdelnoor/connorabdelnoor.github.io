@@ -2,12 +2,127 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+
+    <!-- Primary -->
+    <title>Connor Abdelnoor — Software Engineer</title>
+    <meta
+      name="description"
+      content="Impactful software engineer designing scalable enterprise software from user interfaces to infrastructure. Leading high-performing teams and delivering solutions that provide meaningful value."
+    />
+    <meta name="author" content="Connor Abdelnoor" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://connorabdelnoor.com" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:site_name" content="Connor Abdelnoor" />
+    <meta property="og:title" content="Connor Abdelnoor — Software Engineer" />
+    <meta
+      property="og:description"
+      content="Impactful software engineer designing scalable enterprise software from user interfaces to infrastructure. Leading high-performing teams and delivering solutions that provide meaningful value."
+    />
+    <meta property="og:url" content="https://connorabdelnoor.com" />
+    <meta property="og:image" content="https://connorabdelnoor.com/portfolio_image.jpg" />
+    <meta property="profile:first_name" content="Connor" />
+    <meta property="profile:last_name" content="Abdelnoor" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Connor Abdelnoor — Software Engineer" />
+    <meta
+      name="twitter:description"
+      content="Impactful software engineer designing scalable enterprise software from user interfaces to infrastructure. Delivering solutions that provide meaningful value."
+    />
+    <meta name="twitter:image" content="https://connorabdelnoor.com/portfolio_image.jpg" />
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Connor Abdelnoor",
+        "url": "https://connorabdelnoor.com",
+        "image": "https://connorabdelnoor.com/portfolio_image.jpg",
+        "jobTitle": "Software Engineer",
+        "description": "Impactful software engineer with experience designing scalable enterprise software from user interfaces to infrastructure. Equally adept at leading high-performing teams and driving progress on business objectives. Collaborated with CEOs, Business Owners, and Executive Teams to translate strategic goals into technical requirements and deliver solutions that provide meaningful value.",
+        "sameAs": [
+          "https://github.com/lvampa",
+          "https://www.linkedin.com/in/connorabdelnoor/"
+        ],
+        "knowsAbout": [
+          "Software Engineering",
+          "AWS",
+          "Figma",
+          "Web Development",
+          "React",
+          "Infrastructure as Code",
+          "RAG",
+          "AI Agents"
+        ]
+      }
+    </script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N31N4QQ89Y"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-N31N4QQ89Y');
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Skip link: styled here so it works before the app bundle loads -->
+    <style>
+      .skip-link {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+      .skip-link:focus {
+        position: fixed;
+        z-index: 10000;
+        left: 1rem;
+        top: 1rem;
+        width: auto;
+        height: auto;
+        margin: 0;
+        padding: 0.75rem 1.25rem;
+        clip: auto;
+        overflow: visible;
+        white-space: normal;
+        font: inherit;
+        font-weight: 600;
+        text-decoration: none;
+        border-radius: 6px;
+        background: #fff;
+        color: #101010;
+        outline: 3px solid #d5116a;
+        outline-offset: 2px;
+      }
+    </style>
   </head>
 
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <div id="app"></div>
     <script type="module" src="/src/js/main.js"></script>
   </body>
