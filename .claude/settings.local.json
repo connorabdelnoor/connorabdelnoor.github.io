@@ -3,7 +3,8 @@
     "allow": [
       "mcp__figma__add_figma_file",
       "WebSearch",
-      "WebFetch(domain:commons.wikimedia.org)"
+      "WebFetch(domain:commons.wikimedia.org)",
+      "Bash(npm run:*)"
     ]
   },
   "enabledMcpjsonServers": [
