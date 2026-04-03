@@ -1,0 +1,38 @@
+---
+description: Mobile-first CSS — base styles for small screens, min-width media queries for larger
+alwaysApply: true
+---
+
+# CSS: mobile-first
+
+When adding or editing styles in this repo:
+
+1. **Write base rules for the smallest viewport first** (typically phone). No horizontal layout assumptions that only work on desktop.
+2. **Use `min-width` media queries** to enhance for larger breakpoints — never `max-width` for layout unless there is a strong reason and a comment.
+3. **Order breakpoints** from smallest to largest (e.g. `@media (min-width: 769px)` then larger if needed).
+4. **Prefer relative units** where appropriate (`rem`, `%`, `clamp()`) alongside the project’s CSS variables (`:root`).
+5. **Touch targets and type** still follow `.cursor/rules/web-accessibility.mdc` (contrast, minimum readable sizes, etc.).
+
+```css
+/* Good: mobile-first */
+.component {
+  width: 100%;
+  padding: 1rem;
+}
+
+@media (min-width: 769px) {
+  .component {
+    width: 480px;
+    padding: 1.5rem;
+  }
+}
+
+/* Avoid for layout: desktop-first */
+@media (max-width: 768px) {
+  .component {
+    width: 100%;
+  }
+}
+```
+
+Project breakpoint for “tablet and up” is typically **769px** (aligned with Bulma’s `$tablet`).

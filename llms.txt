@@ -1,0 +1,21 @@
+# Connor Abdelnoor
+
+> Impactful software engineer with experience designing scalable enterprise software from user interfaces to infrastructure. Equally adept at leading high-performing teams and driving progress on business objectives. Collaborated with CEOs, Business Owners, and Executive Teams to translate strategic goals into technical requirements and deliver solutions that provide meaningful value.
+
+## About
+
+Connor Abdelnoor is a software engineer with deep experience across the full stack — from design systems and frontend to cloud infrastructure and AI tooling. He is passionate about team building with a focus on accountability, fostering leadership, and creating a shared sense of purpose.
+
+## Current Projects
+
+- **AI Agent Portfolio** (connorabdelnoor.com): A RAG-based AI agent trained to answer questions about Connor. Built with Pinecone, Gemini, a React frontend, self-hosted N8N for workflows, OpenTofu for IaC, and hosted on AWS within the free tier.
+- **Upper Valley Tech** (uppervalleytech.org): A community organization Connor founded to bring together tech folk in the Upper Valley for socializing, mentorship, and special events.
+
+## Brands Worked With
+
+Zumiez, IDX (ID Experts), Yogi Tea, Dr. Bronner's, Chrome Industries, Nau Clothing, Danner Boots, LaCrosse Boots, IndieHops, Dr. Martens, Yakima.
+
+## Links
+
+- GitHub: https://github.com/lvampa
+- LinkedIn: https://www.linkedin.com/in/connorabdelnoor/

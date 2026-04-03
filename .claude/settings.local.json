@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__figma__add_figma_file",
+      "WebSearch",
+      "WebFetch(domain:commons.wikimedia.org)"
+    ]
+  },
+  "enabledMcpjsonServers": [
+    "figma"
+  ]
+}
