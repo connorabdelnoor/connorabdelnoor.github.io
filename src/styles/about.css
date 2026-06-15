@@ -1,0 +1,85 @@
+/* ── About page ── */
+
+.about-section {
+  padding: 2rem 0 3.5rem;
+}
+
+.about-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.about-photo-col {
+  flex-shrink: 0;
+}
+
+.about-photo {
+  display: block;
+  width: 100%;
+  border-radius: 24px;
+  object-fit: cover;
+  object-position: center;
+  background-color: #1a1a1a;
+}
+
+.about-label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--text-muted);
+  margin-bottom: 1.75rem;
+}
+
+.bio-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.bio-text p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text-muted);
+}
+
+.bio-text a {
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  text-decoration-color: rgba(255, 255, 255, 0.35);
+  transition: text-decoration-color 0.2s;
+}
+
+.bio-text a:hover {
+  text-decoration-color: rgba(255, 255, 255, 0.8);
+}
+
+.bio-text a:focus-visible {
+  outline: 2px solid var(--gradient-mid);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+@media (min-width: 769px) {
+  .about-layout {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 4rem;
+  }
+
+  .about-photo-col {
+    width: 340px;
+  }
+
+  .about-photo {
+    width: 340px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bio-text a {
+    transition: none;
+  }
+}

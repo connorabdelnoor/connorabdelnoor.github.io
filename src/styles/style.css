@@ -6,7 +6,7 @@
   --text-muted: rgba(255, 255, 255, 0.6);
   --gradient-start: #c42323;
   --gradient-mid: #d5116a;
-  --gradient-end: #1119d4;
+  --gradient-end: #6677ff;
 }
 
 html,
@@ -28,7 +28,37 @@ body,
   flex: 1 0 auto;
 }
 
-/* ── Hero ── */
+/* ── Homepage hero ── */
+
+.page-hero {
+  padding: 3rem 0 2.5rem;
+}
+
+.page-hero-heading {
+  font-size: 2.75rem;
+  line-height: 1.15;
+  font-weight: 600;
+  margin-bottom: 0.875rem;
+}
+
+.page-hero-tagline {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  max-width: 560px;
+}
+
+@media (min-width: 769px) {
+  .page-hero {
+    padding: 4rem 0 3rem;
+  }
+
+  .page-hero-heading {
+    font-size: 4.5rem;
+  }
+}
+
+/* ── Photo hero (About page) ── */
 
 .hero,
 .hero-body {

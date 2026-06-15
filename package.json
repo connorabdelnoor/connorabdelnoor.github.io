@@ -19,6 +19,9 @@
     "vite-template",
     "vitejs-template"
   ],
+  "engines": {
+    "node": ">=24"
+  },
   "scripts": {
     "dev": "vite --host --open",
     "lint": "eslint --ext .js ./",

@@ -43,5 +43,11 @@ export default defineConfig([
       sourceType: 'script',
     },
   },
+  {
+    files: ['*.config.js', '*.config.mjs', '*.config.cjs'],
+    rules: {
+      'import/no-unresolved': 'off',
+    },
+  },
   eslintPluginPrettierRecommended,
 ]);

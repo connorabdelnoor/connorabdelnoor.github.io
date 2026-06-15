@@ -13,6 +13,7 @@ export default defineConfig({
     rolldownOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
+        about: resolve(__dirname, 'about.html'),
       },
       output: {
         manualChunks(id) {

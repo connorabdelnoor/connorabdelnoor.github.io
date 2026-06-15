@@ -4,47 +4,22 @@ import '../styles/style.css';
 
 import { nav } from './nav.js';
 import { projectsSection } from './projects.js';
-import { brandsSection } from './brands.js';
 import { footer } from './footer.js';
 
 document.querySelector('#app').innerHTML = `
-  ${nav}
+  ${nav('home')}
 
   <main id="main-content">
-  <section class="hero is-fullheight-with-navbar" aria-labelledby="page-heading">
-    <div class="hero-body">
+    <section class="page-hero" aria-labelledby="page-heading">
       <div class="container">
-        <div class="columns is-vcentered">
-          <div class="column is-narrow">
-            <div class="hero-image">
-              <img
-                src="/portfolio_image.jpg"
-                alt="Connor Abdelnoor"
-                width="480"
-                height="522"
-                decoding="async"
-              />
-            </div>
-          </div>
-          <div class="column hero-content-col">
-            <h1 class="hero-heading" id="page-heading">Hello, <span class="gradient-text">I'm Connor.</span><br />
-            </h1>
-            <p class="hero-body-text">
-              Software engineer, gardener, atavistic wanderer of mountains.
-              I've spent 11 years learning from every corner of my career,
-              equally comfortable in Figma dev mode, or delving the depths of AWS.
-              Now I work with clients to build technical solutions that provide measurable value.
-            </p>
-          </div>
-        </div>
+        <h1 class="page-hero-heading" id="page-heading">
+          <span class="gradient-text">Connor Abdelnoor</span>
+        </h1>
+        <p class="page-hero-tagline">Software engineer, gardener, atavistic wanderer of mountains.</p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  ${projectsSection}
-
-  ${brandsSection}
-
+    ${projectsSection}
   </main>
 
   ${footer}
