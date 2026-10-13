@@ -48,9 +48,9 @@ export const projectsSection = `
   <section class="projects-section" aria-labelledby="projects-heading">
     <div class="container">
       <h2 class="projects-heading" id="projects-heading">What I'm working on</h2>
-      <ul class="projects-list">
+      <ol class="projects-list">
         ${items}
-      </ul>
+      </ol>
     </div>
   </section>
 `;

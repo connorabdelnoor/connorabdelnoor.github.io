@@ -34,6 +34,8 @@ export default defineConfig([
       'prettier/prettier': 'error',
       'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
       'import/unambiguous': 'off',
+      // The node resolver doesn't understand Vite's ?raw suffix; Vite's build still checks these paths.
+      'import/no-unresolved': ['error', { ignore: ['\\?raw$'] }],
     },
   },
   {

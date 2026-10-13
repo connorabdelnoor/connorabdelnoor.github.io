@@ -4,7 +4,6 @@ import '../styles/style.css';
 import '../styles/about.css';
 
 import { nav } from './nav.js';
-import { brandsSection } from './brands.js';
 import { footer } from './footer.js';
 
 document.querySelector('#app').innerHTML = `
@@ -25,7 +24,7 @@ document.querySelector('#app').innerHTML = `
             />
           </div>
           <div class="about-bio">
-            <h1 class="about-label" id="about-heading">About</h1>
+            <h1 class="about-heading" id="about-heading">About</h1>
             <div class="bio-text">
               <p>I'm Connor Abdelnoor. I live in Lebanon, New Hampshire — in the Upper Valley, where the Connecticut River separates Vermont from New Hampshire and the White Mountains are close enough to ski on a Friday evening.</p>
               <p>Most of my career was in Portland. Eleven years building software for brands — Doc Martens, Chrome Industries, Danner Boots, Zumiez, Yakima. Agency work first, at Copious and then Ergon Tech, then five years inside LaCrosse Footwear, an American boot manufacturer. I started there in DevOps and finished as a senior engineer. The work was e-commerce infrastructure: ERPs, inventory systems, order flows, the architecture behind the storefronts. Two million transactions a year. A shipping estimator that saved the company half a million dollars. The kind of work that goes unnoticed until it doesn't.</p>
@@ -39,8 +38,6 @@ document.querySelector('#app').innerHTML = `
         </div>
       </div>
     </section>
-
-    ${brandsSection}
   </main>
 
   ${footer}
