@@ -63,7 +63,7 @@ src/
 public/               # Copied as-is to dist/ (favicon, robots, sitemap, llms.txt)
   media/              # Images, served at /media/
 vite/                 # Vite plugins (shared head, local 404) and their tests
-docs/superpowers/     # Design specs
+docs/specs/           # Design specs
 ```
 
 ## Pages
@@ -108,5 +108,5 @@ Mirror this section when updating agent context.
 ## Architectural decisions
 
 Project context lives in this file (`CLAUDE.md` loads it).
-Design specs for larger changes go in `docs/superpowers/specs/`.
+Design specs for larger changes go in `docs/specs/`.
 Read the relevant spec before making structural changes, and update this file when a decision changes the structure or conventions.
