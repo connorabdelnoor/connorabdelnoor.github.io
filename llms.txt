@@ -4,7 +4,7 @@
 
 Connor Abdelnoor is a software engineer in Lebanon, New Hampshire.
 He spent eleven years in Portland building e-commerce infrastructure, first at the agencies Copious and Ergon Tech, then five years at LaCrosse Footwear.
-He now runs Monochrome Technologies, a consulting practice focused on B2B platforms, AI integration, and infrastructure.
+He now runs Monochrome Technologies, an implementation consulting practice that designs and builds systems end to end.
 He is passionate about team building with a focus on accountability, fostering leadership, and creating a shared sense of purpose.
 
 ## Pages
@@ -12,7 +12,7 @@ He is passionate about team building with a focus on accountability, fostering l
 - [Home](https://connorabdelnoor.github.io/): Current projects and a random printer fact.
 - [About](https://connorabdelnoor.github.io/about): Photos, and a short note on life in New England and an old house.
 - [Portfolio](https://connorabdelnoor.github.io/portfolio): Points to the AI agent at connorabdelnoor.com, which answers questions about Connor's work.
-- [Monochrome](https://connorabdelnoor.github.io/monochrome): Monochrome Technologies, Connor's consulting practice.
+- [Monochrome](https://connorabdelnoor.github.io/monochrome): Monochrome Technologies, Connor's implementation consulting practice, with a contact email.
 
 ## Current Projects
 
