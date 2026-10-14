@@ -1,38 +1,23 @@
 /* ── About page ── */
 
-.about-section {
-  padding: 2rem 0 3.5rem;
+.about-intro {
+  padding: 2rem 0 1rem;
 }
 
-.about-layout {
-  display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
-}
-
-.about-photo-col {
-  flex-shrink: 0;
-}
-
-.about-photo {
-  display: block;
-  width: 100%;
-  border-radius: 24px;
-  object-fit: cover;
-  object-position: center;
-  background-color: var(--surface);
-}
-
-.about-heading {
-  font-size: 0.75rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  color: var(--text-muted);
+.about-intro-text {
+  max-width: 560px;
   margin-bottom: 1.75rem;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+.about-section {
+  padding: 2.5rem 0 3.5rem;
 }
 
 .bio-text {
+  max-width: 640px;
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
@@ -44,42 +29,61 @@
   color: var(--text-muted);
 }
 
-.bio-text a {
-  color: var(--text);
-  text-decoration: underline;
-  text-underline-offset: 0.2em;
-  text-decoration-color: rgba(31, 26, 31, 0.35);
-  transition: text-decoration-color 0.2s;
+/* ── Photo mosaic ── */
+
+/* Same width as the bio text so the photos and words share one column. */
+.photo-mosaic {
+  max-width: 640px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-flow: dense;
+  gap: 0.5rem;
+  list-style: none;
 }
 
-.bio-text a:hover {
-  text-decoration-color: rgba(31, 26, 31, 0.8);
+/* Most of the photos were shot at 3:4, so single tiles match and crops stay small. */
+.photo-mosaic-item {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: var(--surface);
 }
 
-.bio-text a:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 3px;
-  border-radius: 2px;
+/* Images are taken out of flow so tile sizes come from the grid, not the photos. */
+.photo-mosaic-item img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Two columns by two rows of 3:4 cells is still 3:4. */
+.photo-mosaic-item--feature {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+/* The feature spans rows 1 and 2, so row 3 starts directly under it. */
+.photo-mosaic-item--under-feature {
+  grid-row: 3;
+}
+
+/* Fills two rows; its height comes from the single tiles beside it. */
+.photo-mosaic-item--tall {
+  grid-row: span 2;
+  aspect-ratio: auto;
 }
 
 @media (min-width: 769px) {
-  .about-layout {
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 4rem;
+  /* Same top spacing as .content-page so page titles line up across pages. */
+  .about-intro {
+    padding-top: 4rem;
   }
 
-  .about-photo-col {
-    width: 340px;
-  }
-
-  .about-photo {
-    width: 340px;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .bio-text a {
-    transition: none;
+  .photo-mosaic {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.75rem;
   }
 }

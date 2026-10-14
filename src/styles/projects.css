@@ -33,16 +33,6 @@
   border-top: 1px solid var(--border);
 }
 
-.project-index {
-  font-size: 0.75rem;
-  font-weight: 500;
-  color: var(--text-faint);
-  flex-shrink: 0;
-  margin-top: 0.3rem;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-}
-
 .project-content {
   display: flex;
   flex-direction: column;

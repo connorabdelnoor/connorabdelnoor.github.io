@@ -2,18 +2,23 @@
 
 > Impactful software engineer with experience designing scalable enterprise software from user interfaces to infrastructure. Equally adept at leading high-performing teams and driving progress on business objectives. Collaborated with CEOs, Business Owners, and Executive Teams to translate strategic goals into technical requirements and deliver solutions that provide meaningful value.
 
-## About
+Connor Abdelnoor is a software engineer in Lebanon, New Hampshire.
+He spent eleven years in Portland building e-commerce infrastructure, first at the agencies Copious and Ergon Tech, then five years at LaCrosse Footwear.
+He now runs Monochrome Technologies, a consulting practice focused on B2B platforms, AI integration, and infrastructure.
+He is passionate about team building with a focus on accountability, fostering leadership, and creating a shared sense of purpose.
 
-Connor Abdelnoor is a software engineer with deep experience across the full stack — from design systems and frontend to cloud infrastructure and AI tooling. He is passionate about team building with a focus on accountability, fostering leadership, and creating a shared sense of purpose.
+## Pages
+
+- [Home](https://connorabdelnoor.github.io/): Current projects and a random printer fact.
+- [About](https://connorabdelnoor.github.io/about): Photos, and a short note on life in New England and an old house.
+- [Portfolio](https://connorabdelnoor.github.io/portfolio): Points to the AI agent at connorabdelnoor.com, which answers questions about Connor's work.
+- [Monochrome](https://connorabdelnoor.github.io/monochrome): Monochrome Technologies, Connor's consulting practice.
 
 ## Current Projects
 
-- **AI Agent Portfolio** (connorabdelnoor.com): A RAG-based AI agent trained to answer questions about Connor. Built with Pinecone, Gemini, a React frontend, self-hosted N8N for workflows, OpenTofu for IaC, and hosted on AWS within the free tier.
-- **Upper Valley Tech** (uppervalleytech.org): A community organization Connor founded to bring together tech folk in the Upper Valley for socializing, mentorship, and special events.
-
-## Brands Worked With
-
-Zumiez, IDX (ID Experts), Yogi Tea, Dr. Bronner's, Chrome Industries, Nau Clothing, Danner Boots, LaCrosse Boots, IndieHops, Dr. Martens, Yakima.
+- [AI Agent Portfolio](https://connorabdelnoor.com): A RAG-based AI agent trained to answer questions about Connor. Built with Pinecone, Gemini, a React frontend, self-hosted N8N for workflows, OpenTofu for IaC, and hosted on AWS within the free tier.
+- [Upper Valley Tech](https://uppervalleytech.org): A community organization Connor founded to bring together tech folk in the Upper Valley for socializing, mentorship, and special events.
+- [Lebanon Data Project](https://lebanondataproject.org): Work in progress. ETL pipelines over Lebanon, NH town data with Apache Airflow and MongoDB, reports in S3, and a React frontend.
 
 ## Links
 

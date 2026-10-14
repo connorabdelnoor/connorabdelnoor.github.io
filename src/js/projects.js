@@ -26,9 +26,8 @@ const projects = [
 
 const items = projects
   .map(
-    ({ title, url, displayUrl, description }, i) => `
+    ({ title, url, displayUrl, description }) => `
   <li class="project-item">
-    <span class="project-index" aria-hidden="true">0${i + 1}</span>
     <div class="project-content">
       <h3 class="project-title">${title}</h3>
       <a

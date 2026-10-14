@@ -26,4 +26,4 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-Sitemap: https://connorabdelnoor.com/sitemap.xml
+Sitemap: https://connorabdelnoor.github.io/sitemap.xml

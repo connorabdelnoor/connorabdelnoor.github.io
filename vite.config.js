@@ -3,9 +3,13 @@ import { fileURLToPath } from 'node:url';
 import eslint from 'vite-plugin-eslint2';
 import { defineConfig } from 'vite';
 
+import { serveNotFoundPage } from './vite/notFoundPage.js';
+import { sharedHead } from './vite/sharedHead.js';
+
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
+  appType: 'mpa',
   publicDir: 'public',
   root: './',
   build: {
@@ -14,31 +18,18 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         about: resolve(__dirname, 'about.html'),
+        portfolio: resolve(__dirname, 'portfolio.html'),
+        monochrome: resolve(__dirname, 'monochrome.html'),
+        notFound: resolve(__dirname, '404.html'),
       },
       output: {
-        manualChunks(id) {
-          if (id.includes('node_modules')) {
-            const modulePath = id.split('node_modules/')[1];
-
-            const topLevelFolder = modulePath?.split('/')[0];
-
-            if (!topLevelFolder) {
-              const scopedPackageName = modulePath?.split('/')[1];
-              return scopedPackageName?.split('@')[
-                scopedPackageName.startsWith('@') ? 1 : 0
-              ];
-            }
-
-            return topLevelFolder;
-          }
-
-          return null;
-        },
         minify: true,
       },
     },
   },
   plugins: [
+    sharedHead(resolve(__dirname, 'src/partials/head.html')),
+    serveNotFoundPage(__dirname),
     eslint({
       cache: false,
       fix: true,
