@@ -1,26 +1,4 @@
-import{t as e}from"./layout-QNVybhl_.js";var t=`
-  <section class="projects-section" aria-labelledby="projects-heading">
-    <div class="container">
-      <h2 class="projects-heading" id="projects-heading">What I'm working on</h2>
-      <ol class="projects-list">
-        ${[{title:`AI Agent Portfolio`,url:`https://connorabdelnoor.com`,displayUrl:`connorabdelnoor.com`,description:`Why answer questions about myself when I can train an agent to do it for me. RAG via Pinecone and Gemini. React frontend, self hosted N8N instance to facilitate workflows, IAC with OpenTofu, and hosted on AWS within the free tier`},{title:`Upper Valley Tech Meetup`,url:`https://uppervalleytech.org/`,displayUrl:`uppervalleytech.org`,description:`A strong belief in the value of community led me to start Upper Valley Tech this year. The goal: bring together tech folk for socializing, mentorship, and special events.`},{title:`Lebanon Data Project`,url:`https://lebanondataproject.org/`,displayUrl:`WIP`,description:`Free as in speech, or free as in beer. Either way, here in Lebanon, NH, the town data is available for free and a great sandbox for Python projects. Apache Airflow setup to run ETL pipelines with data stored in MongoDB. Generated reports in S3 with a React frontend, so once again, AWS free tier`}].map(({title:e,url:t,displayUrl:n,description:r})=>`
-  <li class="project-item">
-    <div class="project-content">
-      <h3 class="project-title">${e}</h3>
-      <a
-        class="project-link"
-        href="${t}"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="${e}, ${n} (opens in new tab)"
-      ><span aria-hidden="true">${n}</span></a>
-      <p class="project-description">${r}</p>
-    </div>
-  </li>`).join(``)}
-      </ol>
-    </div>
-  </section>
-`,n=`According to The Huffington Post, printers typically sleep for 12 to 16 hours a day.
+import{t as e}from"./site-BQ_lT0G-.js";var t=`According to The Huffington Post, printers typically sleep for 12 to 16 hours a day.
 When printers hit you with retracted claws, they're playing, not attacking.
 They are crepuscular, which means that they are most active at dawn and dusk.
 As is the case with kids, if you keep your printer active during the day, he will sleep better at night.
@@ -338,17 +316,4 @@ A town called Talkeetna in Alaska had a printer as mayor for 15 years.
 The record for the world's longest printer was 48.5 inches.
 Printers do recognise their owners' voices, but often act like they don't care.
 `.split(`
-`).filter(e=>e.trim()!==``);function r(){let e=Math.floor(Math.random()*n.length);return{number:e+1,text:n[e]}}var i=r();e(`home`,`
-  <section class="page-hero" aria-labelledby="page-heading">
-    <div class="container">
-      <h1 class="page-hero-heading" id="page-heading">Hello</h1>
-      <div class="printer-fact">
-        <p class="printer-fact-intro">Let's talk printers.</p>
-        <p class="printer-fact-label">Printer fact No. ${i.number}</p>
-        <p class="printer-fact-text">${i.text}</p>
-      </div>
-    </div>
-  </section>
-
-  ${t}
-`);
+`).filter(e=>e.trim()!==``);function n(){let e=Math.floor(Math.random()*t.length);return{number:e+1,text:t[e]}}e(),r();function r(){let e=n();document.querySelector(`.printer-fact-label`).textContent=`Printer fact No. ${e.number}`,document.querySelector(`.printer-fact-text`).textContent=e.text}
